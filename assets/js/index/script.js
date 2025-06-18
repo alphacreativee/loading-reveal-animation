@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .to(
       ".preloader .intro-title .first-char",
       {
-        x: isMobile ? "144px" : "336px",
+        x: isMobile ? "144px" : "424px",
         duration: 1,
       },
       3.5
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .to(
       ".preloader .intro-title .first-char",
       {
-        x: isMobile ? "120px" : "288px",
+        x: isMobile ? "120px" : "375px",
         y: isMobile ? "-16px" : "-44px",
         fontWeight: "900",
         scale: 0.75,
