@@ -1,0 +1,23 @@
+.d-none {
+  display: none;
+}
+.list-demo {
+  padding: 0 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.demo-item {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+.demo-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.demo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

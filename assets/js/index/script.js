@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.set(
     [
-      ".split-overlay .intro-title .first-char span",
+      // ".split-overlay .intro-title .first-char span",
       ".split-overlay .outro-title .char span",
     ],
     {
@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  gsap.set(".split-overlay .intro-title .first-char", {
-    x: isMobile ? "120px" : "288px",
-    y: isMobile ? "-16px" : "-44px",
-    fontWeight: "900",
-    scale: 0.75,
-  });
+  // gsap.set(".split-overlay .intro-title .first-char", {
+  //   x: isMobile ? "120px" : "288px",
+  //   y: isMobile ? "-16px" : "-44px",
+  //   fontWeight: "900",
+  //   scale: 0.75,
+  // });
 
   gsap.set(".split-overlay .outro-title .char", {
     x: isMobile ? "-48px" : "-128px",
@@ -88,8 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
     0.5
   )
     .to(
-      ".preloader .intro-title .char:not(.first-char) span",
+      ".preloader .intro-title .char span",
       {
+        // preloader .intro-title .char:not(.first-char) span
         y: "100%",
         duration: 0.75,
         stagger: 0.05,
@@ -105,14 +106,14 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       2.5
     )
-    .to(
-      ".preloader .intro-title .first-char",
-      {
-        x: isMobile ? "144px" : "424px",
-        duration: 1,
-      },
-      3.5
-    )
+    // .to(
+    //   ".preloader .intro-title .first-char",
+    //   {
+    //     x: isMobile ? "144px" : "424px",
+    //     duration: 1,
+    //   },
+    //   3.5
+    // )
     .to(
       ".preloader .outro-title .char",
       {
@@ -121,17 +122,17 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       3.5
     )
-    .to(
-      ".preloader .intro-title .first-char",
-      {
-        x: isMobile ? "120px" : "375px",
-        y: isMobile ? "-16px" : "-44px",
-        fontWeight: "900",
-        scale: 0.75,
-        duration: 0.75,
-      },
-      4.5
-    )
+    // .to(
+    //   ".preloader .intro-title .first-char",
+    //   {
+    //     x: isMobile ? "120px" : "375px",
+    //     y: isMobile ? "-16px" : "-44px",
+    //     fontWeight: "900",
+    //     scale: 0.75,
+    //     duration: 0.75,
+    //   },
+    //   4.5
+    // )
     .to(
       ".preloader .outro-title .char",
       {
